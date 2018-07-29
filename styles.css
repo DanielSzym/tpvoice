@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+}
+h1 {
+  color: #333;
+	font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 46px;
+}
+h3 {
+  color: #EA5456;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+button {
+	font-family: 'Nunito Sans', sans-serif;
+}
+p {
+  color: red;
+}
+body {
+  margin-top: 1rem;
+}
+.btn-red{
+  color:#fff;
+  background-color:#ea5456;
+  border-color:#ea5456;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+}
+.btn-red:active:focus{
+  color:#fff;
+  background-color:#ea5456;
+  border-color:#ea5456
+}
+.btn-red:active:focus{
+  color:#fff;
+  background-color:#ea5456;
+  border-color:#ea5456
+}
+.btn-red:hover{
+  color:#fff;
+  background-color:rgb(234, 84, 86, 0.8);
+  border-color:#ea5456
+}
+
+.btn-green{
+  color:#fff;
+  background-color:#c8e3c8;
+  border-color:#c8e3c8;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+
+}
+.btn-green:hover{
+  color:#fff;
+  background-color:rgb(200, 227, 200, 0.6);
+  border-color:#c8e3c8
+}
