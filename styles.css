@@ -5,7 +5,13 @@ h1 {
   color: #333;
 	font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
-  font-size: 46px;
+  font-size: 48px;
+}
+h2 {
+  color: #333;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
 }
 h3 {
   color: #EA5456;
@@ -17,10 +23,28 @@ button {
 	font-family: 'Nunito Sans', sans-serif;
 }
 p {
-  color: red;
+  color: #333;
+  font-family: 'Nunito Sans', sans-serif;
 }
 body {
   margin-top: 1rem;
+}
+footer{
+  background-color:#505050;
+  color:white;
+  min-height:4rem;
+}
+#section2{
+  background-color:#eee;
+}
+.detail-text{
+  padding-right:12rem;
+  margin-top:1rem;
+}
+.footer-text{
+  color: #ddd;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
 }
 .btn-red{
   color:#fff;
