@@ -11,31 +11,36 @@
     <link rel="stylesheet" href="stylesga.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <title>Livia</title>
+    <title>Livia Health | Google Assistant</title>
   </head>
   <body style="background-color:#F1F3F4;">
-    <div class="container" style="padding-right:0;margin:0 0 1rem 0;">
-      <!-- Header -->
-      <div class="row header" style="padding-left:1.5rem">
-        <div class="col-2">
-          <img src="img/gassistant/logo.png" alt="Livia Health Logo" style="width:128px; height:auto;">
-        </div>
-        <div class="col-1">
-          <a href="#" class="headerText">Overview</a>
-        </div>
-        <div class="col-3">
-          <a href="#" class="headerText" style="padding-left:2rem">Get the Google Assistant</a>
-        </div>
-        <div class="col-2">
-          <a href="#" class="headerTextActive">What it can do</a>
-        </div>
-        <div class="col-2">
-          <a href="#" class="headerText">News and resources</a>
+    <div class="outerHeaderCustom">
+      <div class="container">
+        <!-- Header -->
+        <div class="row header" style="padding-left:1.5rem">
+          <div class="col-2">
+            <img src="img/gassistant/logo.png" alt="Livia Health Logo" style="width:128px; height:auto;">
+          </div>
+          <div class="col-1">
+            <a href="#" class="headerText">Overview</a>
+          </div>
+          <div class="col-3">
+            <a href="#" class="headerText" style="padding-left:2rem">Get the Google Assistant</a>
+          </div>
+          <div class="col-2">
+            <a href="#" class="headerTextActive">What it can do</a>
+          </div>
+          <div class="col-2">
+            <a href="#" class="headerText">News and resources</a>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="container">
+      <!-- Menu left and main content -->
       <div class="row">
-        <div class="col-3.5 menuLeft">
-          <div class="column" style="margin-left:0;">
+        <div class="col-3 menuLeft">
+          <div class="column" style="margin-left:0;padding-left:0;">
             <div class="col-sm menuLeftContainer">
               <a href="#" class="menuleft">Your Actions</a>
             </div>
@@ -78,25 +83,91 @@
             <div class="col-sm menuLeftContainer">
               <a href="#" class="menuleft">Shopping</a>
             </div>
+          </div>
+        </div>
+        <div class="col-9">
+            <!-- Search bar -->
+          <div class="row mainContent">
+            <div class="col-1">
+
+            </div>
+            <div class="col-11" style="background-color:#fff;border-radius:3px">
+              <div class="row" style="padding-top:.25rem;padding-bottom:.25rem;">
+                <div class="col-1">
+                  <img src="img/gassistant/search.png" alt="Search icon" style="padding-top:.2rem;padding-left:1rem">
+                </div>
+                <div class="col-11">
+                  <input type="email" class="form-control form-control-sm" placeholder="Search over 1 million actions to try" style="border:none;">
+                </div>
+              </div>
             </div>
           </div>
-        <div class="col-9 ">
-          <!--<div class="d-flex justify-content-center">-->
-            <div class="row mainContent">
-              <div class="col-1">
-                n
-              </div>
-              <div class="col-11 searchBar" style="background-color:#fff;border-radius:3px">
-                <p id="searchBarText">Search over 1 million actions to try</p>
 
+          <div class="row mainContent">
+            <div class="col-1">
+
+            </div>
+            <div class="col-11" style="background-color:#fff;border-radius:8px;">
+
+              <div class="column">
+                <!-- Main Container Logo and Button -->
+                <div class="col-sm" style="margin:2.5rem 0 2rem 0">
+
+                  <div class="row" style="background-color:#fff;border-radius:8px;">
+                    <!-- empty -->
+                    <div class="col-1">
+
+                    </div>
+                    <!-- Logo -->
+                    <div class="col-7">
+                      <img src="img/livia-dark.png" alt="Livia Health Logo" style="width:96px; height:auto;">
+                    </div>
+                    <!-- Button -->
+                    <div class="col-4">
+                      <a href="#"><button type="button" class="btn" id="sendToDeviceBtn" style="margin:0 1rem 0 1rem;">Send to device</button></a>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <!-- Main Container Details and stuff -->
+                <div class="col-sm">
+                  <div class="row" style="background-color:#fff;border-radius:8px;">
+                    <!-- empty -->
+                    <div class="col-1">
+                    </div>
+                    <!-- left info -->
+                    <div class="col-4">
+                      <p id="mainContentInfoHeader">DETAILS</p>
+                      <p id="mainContentInfoHeader">AVAILABLE DEVICES</p>
+                      <ul id="mainContentInfoList">
+                        <li>Android 6.0+ TVs</li>
+                        <li>Google Home</li>
+                        <li>Android 5.0+ phones</li>
+                        <li>iOS 10.0+ devices</li>
+                        <li>Chromebook</li>
+                        <li>Other</li>
+                      </ul>
+                    </div>
+                    <!-- right info -->
+                    <div class="col-7">
+                      <span id="mainContentInfoText">Livia Health is the perfect platform to unite all of your devices to perfectly keep track about your fitness levels. You can also add other service ranging from diabetes to lorem ipsum.</span>
+                      <br>
+                      <a href="#" id="mainContentInfoLink">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            hello 3 7 1
-          <!-- </div> -->
+          </div>
+
         </div>
       </div>
-    </div>
+    hello 3 7 1
+          <!-- </div> -->
+  </div>
+
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- JavaScript here -->
