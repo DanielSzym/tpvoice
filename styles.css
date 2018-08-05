@@ -1,57 +1,33 @@
-body {
-    background-color: white;
-}
-h1 {
-  color: #333;
-	font-family: 'Nunito Sans', sans-serif;
-  font-weight: 900;
-  font-size: 48px;
-}
-h2 {
-  color: #333;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-}
-h3 {
-  color: #EA5456;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-}
-button {
-	font-family: 'Nunito Sans', sans-serif;
-}
-p {
-  color: #333;
-  font-family: 'Nunito Sans', sans-serif;
-}
+/*
+COLOR CODES
+=============
 
-body {
+
+ */
+
+
+ /*================================ */
+ /*================================ */
+ /*================================ */
+
+
+/*
+GENERAL STYLES
+=============
+ */
+ body {
+  background-color: white;
   margin-top: 1rem;
 }
+button {
+font-family: 'Nunito Sans', sans-serif;
+}
 footer{
-  background-color:#505050;
-  color:white;
-  min-height:4rem;
+background-color:#505050;
+color:white;
+min-height:4rem;
 }
-#section2{
-  background-color:#eee;
-}
-.detail-text{
-  padding-right:12rem;
-  margin-top:1rem;
-}
-.footer-text{
-  color: #ddd;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 14px;
-}
-.footer-text:hover{
-  color: #ddd;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 14px;
-}
+
 .btn-red{
   color:#fff;
   background-color:#ea5456;
@@ -73,7 +49,6 @@ footer{
   background-color:rgb(234, 84, 86, 0.8);
   border-color:#ea5456
 }
-
 .btn-green{
   color:#fff;
   background-color:#c8e3c8;
@@ -85,6 +60,63 @@ footer{
   color:#fff;
   background-color:rgb(200, 227, 200, 0.6);
   border-color:#c8e3c8
+}
+ 
+ /*
+TYPOGRAPHY
+=============
+ */
+ h1 {
+  color: #333;
+	font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+}
+h2 {
+  color: #333;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+h3 {
+  color: #EA5456;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p {
+  color: #333;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.detail-text{
+  padding-right:12rem;
+  margin-top:1rem;
+}
+.footer-text{
+  color: #ddd;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+}
+.footer-text:hover{
+  color: #ddd;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+}
+
+ /*
+HELPERS
+=============
+ */
+
+
+ /*
+LANDING PAGE
+=============
+ */
+ #section2{
+  background-color:#eee;
 }
 .testimonialContainer{
   background-color:#FBFBFB;
@@ -104,3 +136,29 @@ footer{
   background-color:red;
   height:128px;
 }
+
+ /*
+DASHBOARD
+=============
+ */
+.dashboard{
+  background-color: #F7F8F9;
+}
+.dashboard-header-top {
+  background-color: white;
+}
+
+ /*
+ONBOARDING
+=============
+ */
+
+
+
+
+
+
+
+
+
+
