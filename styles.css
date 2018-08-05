@@ -143,9 +143,38 @@ DASHBOARD
  */
 .dashboard{
   background-color: #F7F8F9;
+  margin: 0;
 }
-.dashboard-header-top {
+.header-top {
   background-color: white;
+  /*box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+  z-index: 200;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: inline-block;
+}
+.header-left{
+  background-color: white;
+ /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+  z-index: -1;
+  float: left;
+  width: 64px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.menu-top {
+  float: right;
+}
+.menu-img{
+  float: left;
+}
+.menu-left{
+  top: 50%;
+  padding-left: 8px;
+  position: fixed;
 }
 
  /*
