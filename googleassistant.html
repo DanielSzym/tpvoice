@@ -13,165 +13,227 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <title>Livia Health | Google Assistant</title>
   </head>
-  <body style="background-color:#F1F3F4;">
-    <div class="outerHeaderCustom">
-      <div class="container-fluid">
-        <!-- Header -->
-        <div class="row header" style="padding-left:1.5rem">
-          <div class="col-sm-auto">
-            <a href="https://assistant.google.com/intl/en_us/"><img src="img/gassistant/logo.png" alt="Livia Health Logo" style="width:160px; height:auto;">
-          </div>
-          <div class="col-sm-auto">
-            <a href="#" class="headerText">Overview</a>
-          </div>
-          <div class="col-sm-auto">
-            <a href="#" class="headerText" style="padding-left:2rem">Get the Google Assistant</a>
-          </div>
-          <div class="col-sm-auto">
-            <a href="#" class="headerTextActive">What it can do</a>
-          </div>
-          <div class="col-sm-auto">
-            <a href="#" class="headerText">News and resources</a>
-          </div>
-          <div class="col-6">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="https://assistant.google.com/intl/en_us/"><img src="img/gassistant/logo.png" alt="Livia Health Logo" style="width:160px; height:auto;"></a>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="headerText" href="#">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="headerText" href="#">Get the Google Assistant</a>
+          </li>
+          <li class="nav-item">
+            <a class="headerText headerTextActive" href="#">What it can do</a>
+          </li>
+          <li class="nav-item">
+            <a class="headerText" href="#">News and resources</a>
+          </li>
+        </ul>
+
+      </div>
+      <div id="headerProfileIcon"><span id="headerProfileChar">J</span></div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="element" style="background-color:#fff;">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Actions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Arts & lifestyle</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business & finance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Education & reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Food & drink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Games & fun</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Health & fitness</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home control</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids & family</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Local</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies, photos & TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Music & audio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News & magazines</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productivity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shopping</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Social & communication</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Travel & transportation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Weather</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Main Container -->
+        <div class="container" style="background-color:yellow;max-width:880px;">
+          <div class="d-flex justify-content-center">
+            <!-- CONTENT OF INNER CONTAINER START HERE -->
+            <div class="col-12">
+              <!-- Search bar -->
+              <div class="row mainContent">
+                <div class="col-12 searchBar">
+                  <div class="row">
+                    <div class="col-1">
+                      <img src="img/gassistant/search.png" alt="Search icon" class="searchIcon">
+                    </div>
+                    <div class="col-11">
+                      <input type="email" class="form-control form-control-sm" placeholder="Search over 1 million actions to try" style="border:none;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Main Content -->
+              <div class="row mainContent">
+                <div class="col-12" style="background-color:#fff;border-radius:8px;">
+                  <div class="column">
+                    <!-- Main Container Logo and Button -->
+                    <div class="col-sm" style="margin:2.5rem 0 2rem 0">
+                      <div class="row" style="background-color:#fff;border-radius:8px;">
+                        <!-- empty -->
+                        <div class="col-1">
+
+                        </div>
+                        <!-- Logo -->
+                        <div class="col-7">
+                          <img src="img/livia-dark.png" alt="Livia Health Logo" style="width:96px; height:auto;">
+                        </div>
+                        <!-- Button: send to device -->
+                        <div class="col-4">
+                          Schatten!
+                          <a href="#"><button type="button" class="btn" id="sendToDeviceBtn" style="margin:0 1rem 0 1rem;">Send to device</button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <!-- Main Container Details and stuff -->
+                    <div class="col-sm" style="margin-top:2rem">
+                      <div class="row" style="background-color:#fff;border-radius:8px;">
+                        <!-- empty -->
+                        <div class="col-1">
+                        </div>
+                        <!-- left info -->
+                        <div class="col-4">
+                          <p class="mainContentInfoHeader">DETAILS</p>
+                          <ul class="mainContentInfoList">
+                            <li>Health & Fitness</li>
+                          </ul>
+                          <p class="mainContentInfoHeader">AVAILABLE DEVICES</p>
+                          <ul class="mainContentInfoList">
+                            <li>Android 6.0+ TVs</li>
+                            <li>Google Home</li>
+                            <li>Android 5.0+ phones</li>
+                            <li>iOS 10.0+ devices</li>
+                            <li>Chromebook</li>
+                            <li>Other</li>
+                          </ul>
+                        </div>
+                        <!-- right info -->
+                        <div class="col-7">
+                          <span id="mainContentInfoText">Livia Health is the perfect platform to unite all of your devices to perfectly keep track about your fitness levels. You can also add other service ranging from diabetes to lorem ipsum.</span>
+                          <br>
+                          <a href="#" id="mainContentInfoLink">READ MORE</a>
+                          <br><br>
+                          <span class="mainContentInfoHeader">ASK YOUR ASSISTANT</span>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-auto">
+                                <div class="AskYourAssistantBullets">
+                                  <img src="img/gassistant/logo-dark-16.png" alt="">
+                                  <span>How has my fitness developed over the last month?</span>
+                                </div>
+                              </div>
+                              <div class="col-sm-auto"></div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-auto">
+                              <div class="AskYourAssistantBullets">
+                                <img src="img/gassistant/logo-dark-16.png" alt="">
+                                <span>How is my blood pressure currently?</span>
+                              </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-auto">
+                              <div class="AskYourAssistantBullets">
+                                <img src="img/gassistant/logo-dark-16.png" alt="">
+                                <span>What should I do today to reach my daily fitness goal?</span>
+                              </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-auto">
+                              <div class="AskYourAssistantBullets">
+                                <img src="img/gassistant/logo-dark-16.png" alt="">
+                                <span>As a diabetes patient, can I still eat this apple today?</span>
+                              </div>
+
+                            </div>
+                            <div class="col-sm-1"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr style="margin:3rem 0 3rem 0">
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CONTENT OF INNER CONTAINER END HERE -->
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <!-- Menu left and main content -->
-      <div class="row">
-        <div class="col-3 menuLeft">
-          <div class="column" style="margin-left:0;padding-left:0;">
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Your Actions</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Arts & lifestyle</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Business & finance</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Food & drink</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Games & fun</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Health & fitness</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Home control</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Kids & family</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Local</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Movies, photos & TV</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Music & Audio</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">News & magazines</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Productivity</a>
-            </div>
-            <div class="col-sm menuLeftContainer">
-              <a href="#" class="menuleft">Shopping</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-9">
-            <!-- Search bar -->
-          <div class="row mainContent">
-            <div class="col-1">
-
-            </div>
-            <div class="col-11" style="background-color:#fff;border-radius:3px">
-              <div class="row" style="padding-top:.25rem;padding-bottom:.25rem;">
-                <div class="col-1">
-                  <img src="img/gassistant/search.png" alt="Search icon" style="padding-top:.2rem;padding-left:1rem">
-                </div>
-                <div class="col-11">
-                  <input type="email" class="form-control form-control-sm" placeholder="Search over 1 million actions to try" style="border:none;">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mainContent">
-            <div class="col-1">
-
-            </div>
-            <div class="col-11" style="background-color:#fff;border-radius:8px;">
-
-              <div class="column">
-                <!-- Main Container Logo and Button -->
-                <div class="col-sm" style="margin:2.5rem 0 2rem 0">
-
-                  <div class="row" style="background-color:#fff;border-radius:8px;">
-                    <!-- empty -->
-                    <div class="col-1">
-
-                    </div>
-                    <!-- Logo -->
-                    <div class="col-7">
-                      <img src="img/livia-dark.png" alt="Livia Health Logo" style="width:96px; height:auto;">
-                    </div>
-                    <!-- Button -->
-                    <div class="col-4">
-                      Schatten!
-                      <a href="#"><button type="button" class="btn" id="sendToDeviceBtn" style="margin:0 1rem 0 1rem;">Send to device</button></a>
-                    </div>
-                  </div>
-                </div>
-                <hr>
-                <!-- Main Container Details and stuff -->
-                <div class="col-sm">
-                  <div class="row" style="background-color:#fff;border-radius:8px;">
-                    <!-- empty -->
-                    <div class="col-1">
-                    </div>
-                    <!-- left info -->
-                    <div class="col-4">
-                      <p id="mainContentInfoHeader">DETAILS</p>
-                      <p id="mainContentInfoHeader">AVAILABLE DEVICES</p>
-                      <ul id="mainContentInfoList">
-                        <li>Android 6.0+ TVs</li>
-                        <li>Google Home</li>
-                        <li>Android 5.0+ phones</li>
-                        <li>iOS 10.0+ devices</li>
-                        <li>Chromebook</li>
-                        <li>Other</li>
-                      </ul>
-                    </div>
-                    <!-- right info -->
-                    <div class="col-7">
-                      <span id="mainContentInfoText">Livia Health is the perfect platform to unite all of your devices to perfectly keep track about your fitness levels. You can also add other service ranging from diabetes to lorem ipsum.</span>
-                      <br>
-                      <a href="#" id="mainContentInfoLink">READ MORE</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    hello 3 7 1
-          <!-- </div> -->
-  </div>
-
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- JavaScript here -->
 

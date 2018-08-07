@@ -4,6 +4,7 @@ GENERAL STYLES
  */
 body{
   font-family: 'Open Sans', sans-serif;
+  background-color:#F1F3F4;
 }
 #sendToDeviceBtn{
   background-color:#3D87EC;
@@ -22,6 +23,8 @@ TYPOGRAPHY
 =============
 */
 .headerText{
+  margin:0 1.5rem 0 1.5rem;
+  font-family: 'Open Sans', sans-serif;
   color:#797979;
   font-size:85%;
 }
@@ -30,13 +33,12 @@ TYPOGRAPHY
   text-decoration: none;
 }
 .headerTextActive{
-  color:#373737;
+  color:#000;
   border-bottom: 3px solid #2F6ACF;
-  padding-bottom:1rem;
-  font-size:85%;
+  padding-bottom:1.19rem;
 }
 .headerTextActive:hover{
-  color:#373737;
+  color:#000;
   border-bottom: 3px solid #2F6ACF;
   text-decoration: none;
 }
@@ -44,61 +46,75 @@ TYPOGRAPHY
   color:#81878B;
   padding-top:1rem;
 }
+.mainContentInfoHeader{
+  color:#6B6E6F;
+  font-weight:bold;
+  font-size:75%;
+  font-style:bold;
+}
+.mainContentInfoList{
+  color:#777B7F;
+  font-size:80%;
+  font-style:bold;
+}
 #mainContentInfoText{
-  font-size:90%;
+  font-size:85%;
 }
 #mainContentInfoLink{
+  color:#508AF4;
   font-size:90%;
   margin-left:.6rem;
+}
+#mainContentInfoLink:hover{
+  color:#508AF4;
+  text-decoration: none;
+
 }
 
 /*
 Google Assistant Page
 =============
 */
-.container {
-  padding-right:0;
-  padding-left:0;
-  margin-right:0;
-  margin-left:0;
-  width:150%;
- }
- .outerHeaderCustom{
-   background-color:#FFFFFF;
-   border-bottom: 1px solid #ccc;
- }
-.header{
-  background-color:#FFFFFF;
-  padding-top:1rem;
-  padding-bottom:1rem;
-  background-color:#fff;
+.navbar-top{
+  padding-top:.9rem;
+  padding-bottom:.7rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .04), 0 1px 10px 0 rgba(0, 0, 0, .03), 0 2px 4px -1px rgba(0, 0, 0, .1)
 }
-.menuLeft{
-  border-right: 1px solid #ccc;
-  padding-right: 4rem;
-  background-color:#fff;
+ #headerProfileIcon {
+	width: 32px;
+	height: 32px;
+	background: #007DCB;
+	border-radius: 50%;
+  color:#fff;
+  position:relative;
 }
-.menuLeftContainer{
-  padding-top:10px;
-  padding-bottom:10px;
-  margin-left:20px;
+#headerProfileChar{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
-.menuLeftContainer:hover{
-  padding-top:10px;
-  padding-bottom:10px;
-  background-color:#F1F3F4;
+@media (max-width: 1135px/*991px*/) {
+  .element {
+    display: none;
+  }
 }
-.menuleft{
-  font-size: 14px;
+.nav-link{
   color:#797979;
+  font-size:85%;
+  padding-top:.8rem;
+  padding-bottom:.8rem;
+  min-width:256px;
 }
-.menuleft:hover{
-  font-size: 14px;
-  color:#0D0D0D;
-  padding-top:10px;
-  padding-bottom:10px;
-  text-decoration:none;
+.nav-link:hover{
   background-color:#F1F3F4;
+  color:#000;
+}
+.nav-link:active{
+  background-color:#F1F3F4;
+  color:#000;
 }
 .mainContent{
   background-color:#F1F3F4;
@@ -106,14 +122,20 @@ Google Assistant Page
 }
 .searchBar{
   background-color:#fff;
-  border-radius:3px;
+  border-radius:5px;
+  padding-top:.5rem;padding-bottom:.5rem;
+  margin-top:.7rem;
+  margin-bottom:.7rem;
 }
-#mainContentInfoHeader{
-  font-size:75%;
-  font-style:bold;
+.searchIcon{
+  padding-top:.2rem;
+  padding-left:1rem;
 }
-#mainContentInfoList{
-  color:#777B7F;
-  font-size:80%;
-  font-style:bold;
+.AskYourAssistantBullets{
+  padding:.3rem 1rem .3rem 1rem;
+  margin:.5rem 0 .2rem 0;
+  border: 1px solid #E1E0E1;
+  border-radius:30px;
+  color:#515557;
+  font-size:85%;
 }
