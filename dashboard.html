@@ -1,38 +1,167 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 
-    <body class="dashboard">
-        <div class="container-fluid header-top">
-            <div class="menu-img">
-              <img src="img/livia-dark.png" alt="Livia Health Logo" style="width:56px; height:auto;">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900" rel="stylesheet">
+
+  <body class="dashboard">
+    <!-- HEADER & MENU -->
+    <div class="container-fluid header-top">
+      <div class="menu-img">
+        <img src="img/livia-dark.png" alt="Livia Health Logo" style="width:56px; height:auto;">
+      </div>
+      <div class="menu-top">
+        John Doe
+      </div>
+    </div>
+    <div class="header-left">
+      <div class="menu-left">
+        MENU
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container" style="margin-top: 64px;">
+      <!-- Greeting with username -->
+      <h1 class="greeting">Hi John!</h1>
+    </div>
+    <!-- Data Insights -->
+    <div class="container" style="margin-top: 32px;">
+      <h4>Data Insights</h4>
+      <div class="container" style="margin-top: 32px;">
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <!-- Title and Status -->
+              <div class="description">
+                <div class="card-title">Glucose</div>
+                <span class="card-status">In the norm</span>
+                <!-- Amount and unit -->
+                <!-- Number color based on status or pick randomly-->
+                <div class="amount">
+                  <span class="card-number" style="color: #8181CF">96</span>
+                  <span class="card-unit">mg / dl</span>
+                </div>
+                <!-- Data or Graph Here -->
+                <div class="data">
+
+                </div>
+              </div>
             </div>
-            <div class="menu-top">
-              John Doe
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <!-- Title and Status -->
+              <div class="description">
+                <div class="card-title">Heart Rate</div>
+                <span class="card-status">Above the norm</span>
+                <!-- Amount and unit -->
+                <!-- Number color based on status or pick randomly-->
+                <div class="amount">
+                  <span class="card-number" style="color: #EA5456">141</span>
+                  <span class="card-unit">bpm</span>
+                </div>
+                <!-- Data or Graph Here -->
+                <div class="data">
+
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-4">
+            <div class="card text-card">
+              <!-- Title and Status -->
+              <div class="description">
+                <div class="card-title">Sunday is your least active day</div>
+                <!-- Data as text or graph Here -->
+                <div class="data">
+                  <p class="card-text">
+                    Try to take a long walk or a little run. The weather in your town should be quite good this weekend!
+                  </p>
+                  <img class="img img-responsive" src="img/run-man.png" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="header-left">
-          <div class="menu-left">
-            MENU
+        <div class="row" style="margin-top:32px;">
+          <div class="col-4">
+            <div class="card">
+              <!-- Title and Status -->
+              <div class="description">
+                <div class="card-title">Blood Pressure</div>
+                <span class="card-status">In the norm</span>
+                <!-- Amount and unit -->
+                <!-- Number color based on status or pick randomly-->
+                <div class="amount">
+                  <span class="card-number" style="color: #C7B2E8">120/88</span>
+                  <span class="card-unit">mm / Hg</span>
+                </div>
+                <!-- Data or Graph Here -->
+                <div class="data">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <!-- Title and Status -->
+              <div class="description">
+                <div class="card-title">Weight</div>
+                <span class="card-status">In the norm</span>
+                <!-- Amount and unit -->
+                <!-- Number color based on status or pick randomly-->
+                <div class="amount">
+                  <span class="card-number" style="color: #EBB9BC">84</span>
+                  <span class="card-unit">kg</span>
+                </div>
+                <!-- Data or Graph Here -->
+                <div class="data">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card text-card">
+              <!-- Title and Status -->
+              <div class="description">
+                <div class="card-title">Sunday is your least active day</div>
+                <!-- Data as text or graph Here -->
+                <div class="data">
+                  <p class="card-text">
+                    Try to take a long walk or a little run. The weather in your town should be quite good this weekend!
+                  </p>
+                  <img class="img img-responsive" src="img/run-man.png" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
+      </div>
+    </div>
 
 
-     <!-- JavaScript here -->
+    <!-- JavaScript here -->
 
     <!-- 1 is jQuery , 2 is Popper.js,  is Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
   </body>
+
 </html>

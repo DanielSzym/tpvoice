@@ -5,144 +5,158 @@ COLOR CODES
 
  */
 
-
- /*================================ */
- /*================================ */
- /*================================ */
-
+/*================================ */
+/*================================ */
+/*================================ */
 
 /*
 GENERAL STYLES
 =============
  */
- body {
+body {
   background-color: white;
   margin-top: 1rem;
 }
 button {
-font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
-footer{
-background-color:#505050;
-color:white;
-min-height:4rem;
+footer {
+  background-color: #505050;
+  color: white;
+  min-height: 4rem;
 }
 
-.btn-red{
-  color:#fff;
-  background-color:#ea5456;
-  border-color:#ea5456;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+.btn-red {
+  color: #fff;
+  background-color: #ea5456;
+  border-color: #ea5456;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
-.btn-red:active:focus{
-  color:#fff;
-  background-color:#ea5456;
-  border-color:#ea5456
+.btn-red:active:focus {
+  color: #fff;
+  background-color: #ea5456;
+  border-color: #ea5456;
 }
-.btn-red:active:focus{
-  color:#fff;
-  background-color:#ea5456;
-  border-color:#ea5456
+.btn-red:active:focus {
+  color: #fff;
+  background-color: #ea5456;
+  border-color: #ea5456;
 }
-.btn-red:hover{
-  color:#fff;
-  background-color:rgb(234, 84, 86, 0.8);
-  border-color:#ea5456
+.btn-red:hover {
+  color: #fff;
+  background-color: rgb(234, 84, 86, 0.8);
+  border-color: #ea5456;
 }
-.btn-green{
-  color:#fff;
-  background-color:#c8e3c8;
-  border-color:#c8e3c8;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+.btn-green {
+  color: #fff;
+  background-color: #c8e3c8;
+  border-color: #c8e3c8;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.btn-green:hover {
+  color: #fff;
+  background-color: rgb(200, 227, 200, 0.6);
+  border-color: #c8e3c8;
+}
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border-color: white;
+  padding: 8px;
+  height: 200px;
+}
 
-}
-.btn-green:hover{
-  color:#fff;
-  background-color:rgb(200, 227, 200, 0.6);
-  border-color:#c8e3c8
-}
- 
- /*
+/*
 TYPOGRAPHY
 =============
  */
- h1 {
+h1 {
   color: #333;
-	font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 900;
   font-size: 48px;
 }
 h2 {
   color: #333;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 900;
   font-size: 40px;
 }
 h3 {
-  color: #EA5456;
-  font-family: 'Nunito Sans', sans-serif;
+  color: #ea5456;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: bold;
   font-size: 24px;
 }
 
+h4 {
+  font-family: "Nunit Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #888888;
+}
+
 p {
   color: #333;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.detail-text{
-  padding-right:12rem;
-  margin-top:1rem;
+.detail-text {
+  padding-right: 12rem;
+  margin-top: 1rem;
 }
-.footer-text{
+.footer-text {
   color: #ddd;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
 }
-.footer-text:hover{
+.footer-text:hover {
   color: #ddd;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
 }
 
- /*
+/*
 HELPERS
 =============
  */
 
-
- /*
+/*
 LANDING PAGE
 =============
  */
- #section2{
-  background-color:#eee;
+#section2 {
+  background-color: #eee;
 }
-.testimonialContainer{
-  background-color:#FBFBFB;
-  border-radius: .25rem;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
-  margin:0 2rem 0 2rem;
+.testimonialContainer {
+  background-color: #fbfbfb;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  margin: 0 2rem 0 2rem;
 }
-.testimonialImageContainer{
-  margin-top:2rem;
-  padding:0 1rem 0 2rem;
+.testimonialImageContainer {
+  margin-top: 2rem;
+  padding: 0 1rem 0 2rem;
 }
-.testimonialImg{
-  height:96px;
-  margin-bottom:1rem;
+.testimonialImg {
+  height: 96px;
+  margin-bottom: 1rem;
 }
-.partnerContainer{
-  background-color:red;
-  height:128px;
+.partnerContainer {
+  background-color: red;
+  height: 128px;
 }
 
- /*
+/*
 DASHBOARD
 =============
  */
-.dashboard{
-  background-color: #F7F8F9;
+.dashboard {
+  background-color: #f7f8f9;
   margin: 0;
 }
 .header-top {
@@ -153,9 +167,9 @@ DASHBOARD
   padding-bottom: 16px;
   display: inline-block;
 }
-.header-left{
+.header-left {
   background-color: white;
- /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
   z-index: -1;
   float: left;
   width: 64px;
@@ -168,26 +182,66 @@ DASHBOARD
 .menu-top {
   float: right;
 }
-.menu-img{
+.menu-img {
   float: left;
 }
-.menu-left{
+.menu-left {
   top: 50%;
   padding-left: 8px;
   position: fixed;
 }
+.greeting {
+  font-size: 24px;
+}
+.card-title {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 0;
+}
+.card-status {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
 
- /*
+  color: #888888;
+}
+.card-number {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 36px;
+}
+.card-unit {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
+
+  color: #888888;
+}
+.card .desciption {
+  display: inline-block;
+}
+.card .amount {
+  float: right;
+}
+.card-text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
+
+  color: #888888;
+}
+
+/*
 ONBOARDING
 =============
  */
-
-
-
-
-
-
-
-
-
-
