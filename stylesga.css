@@ -1,6 +1,61 @@
+/*
+GENERAL STYLES
+=============
+ */
 body{
   font-family: 'Open Sans', sans-serif;
 }
+#sendToDeviceBtn{
+  background-color:#3D87EC;
+  color:#fff;
+  height:32px;
+  font-size:80%;
+  border-radius:2px;
+}
+#sendToDeviceBtn:focus{
+  background-color:#618ECA;
+  border:none;
+}
+
+/*
+TYPOGRAPHY
+=============
+*/
+.headerText{
+  color:#797979;
+  font-size:85%;
+}
+.headerText:hover{
+  color:#797979;
+  text-decoration: none;
+}
+.headerTextActive{
+  color:#373737;
+  border-bottom: 3px solid #2F6ACF;
+  padding-bottom:1rem;
+  font-size:85%;
+}
+.headerTextActive:hover{
+  color:#373737;
+  border-bottom: 3px solid #2F6ACF;
+  text-decoration: none;
+}
+#searchBarText{
+  color:#81878B;
+  padding-top:1rem;
+}
+#mainContentInfoText{
+  font-size:90%;
+}
+#mainContentInfoLink{
+  font-size:90%;
+  margin-left:.6rem;
+}
+
+/*
+Google Assistant Page
+=============
+*/
 .container {
   padding-right:0;
   padding-left:0;
@@ -17,23 +72,6 @@ body{
   padding-top:1rem;
   padding-bottom:1rem;
   background-color:#fff;
-}
-.headerText{
-  color:#797979;
-}
-.headerText:hover{
-  color:#797979;
-  text-decoration: none;
-}
-.headerTextActive{
-  color:#373737;
-  border-bottom: 3px solid #2F6ACF;
-  padding-bottom:1rem;
-}
-.headerTextActive:hover{
-  color:#373737;
-  border-bottom: 3px solid #2F6ACF;
-  text-decoration: none;
 }
 .menuLeft{
   border-right: 1px solid #ccc;
@@ -69,28 +107,6 @@ body{
 .searchBar{
   background-color:#fff;
   border-radius:3px;
-}
-#searchBarText{
-  color:#81878B;
-  padding-top:1rem;
-}
-#sendToDeviceBtn{
-  background-color:#3D87EC;
-  color:#fff;
-  height:32px;
-  font-size:80%;
-  border-radius:2px;
-}
-#sendToDeviceBtn:focus{
-  background-color:#618ECA;
-  border:none;
-}
-#mainContentInfoText{
-  font-size:90%;
-}
-#mainContentInfoLink{
-  font-size:90%;
-  margin-left:.6rem;
 }
 #mainContentInfoHeader{
   font-size:75%;
