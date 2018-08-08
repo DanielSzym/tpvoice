@@ -18,27 +18,27 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="https://assistant.google.com/intl/en_us/"><img src="img/gassistant/logo.png" alt="Livia Health Logo" style="width:160px; height:auto;"></a>
+      <a class="navbar-brand" href="https://assistant.google.com/intl/en_us/"><img src="img/gassistant/logo.png" alt="Google Assistant Logo" style="width:176px; height:auto;"></a>
 
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="headerText" href="#">Overview</a>
+            <a class="headerText" href="https://assistant.google.com/intl/en_us/">Overview</a>
           </li>
           <li class="nav-item">
-            <a class="headerText" href="#">Get the Google Assistant</a>
+            <a class="headerText" href="https://assistant.google.com/intl/en_us/platforms/phones/">Get the Google Assistant</a>
           </li>
           <li class="nav-item">
-            <a class="headerText headerTextActive" href="#">What it can do</a>
+            <a class="headerText headerTextActive" href="https://assistant.google.com/explore?hl=en-US">What it can do</a>
           </li>
           <li class="nav-item">
-            <a class="headerText" href="#">News and resources</a>
+            <a class="headerText" href="https://assistant.google.com/intl/en_us/resources/">News and resources</a>
           </li>
         </ul>
 
       </div>
-      <div id="headerProfileIcon"><span id="headerProfileChar">J</span></div>
+      <a href=#><div id="headerProfileIcon"><span id="headerProfileChar">J</span></div></a>
     </nav>
     <div class="container-fluid">
       <div class="row">
@@ -111,6 +111,13 @@
           <div class="d-flex justify-content-center">
             <!-- CONTENT OF INNER CONTAINER START HERE -->
             <div class="col-12">
+              <!-- ALERT legal-->
+              <div class="alert alert-danger alert-dismissible fade show" role="alert" id="alertBanner">
+                <strong>Note:</strong> This is not the official Google Assistant page. This page is only for the purpose of a student's project.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <!-- Search bar -->
               <div class="row mainContent">
                 <div class="col-12 searchBar">
@@ -125,19 +132,34 @@
                 </div>
               </div>
               <!-- Main Content -->
-              <div class="row mainContent">
-                <div class="col-12" style="background-color:#fff;border-radius:8px;">
+              <div class="row mainContent shadow-sm rounded">
+                <div class="col-12" style="background-color:#F7F8F9;border-radius:8px;">
                   <div class="column">
                     <!-- Main Container Logo and Button -->
+                    <div class="col-sm-auto" style="margin-top:.5rem;">
+                      <!--Bookmark and Share button-->
+                      <div class="d-flex justify-content-end">
+                        <img src="img/gassistant/baseline-bookmark_border-24px.svg" alt="Google Matrial Design Bookmark Icon" class="p-2 icon">
+                        <img src="img/gassistant/baseline-share-24px.svg" alt="Google Matrial Design Share Icon" class="p-2 icon">
+                      </div>
+                    </div>
                     <div class="col-sm" style="margin:2.5rem 0 2rem 0">
-                      <div class="row" style="background-color:#fff;border-radius:8px;">
+                      <div class="row" style="border-radius:8px;">
                         <!-- empty -->
                         <div class="col-1">
 
                         </div>
                         <!-- Logo -->
                         <div class="col-7">
+                          <div class="row">
+                            <div class="col-sm-auto">
                           <img src="img/livia-dark.png" alt="Livia Health Logo" style="width:96px; height:auto;">
+                            </div>
+                            <div class="col-sm-auto">
+                          <h1>Livia Health</h1>
+                          <h2>Health assistant</h2>
+                            </div>
+                          </div>
                         </div>
                         <!-- Button: send to device -->
                         <div class="col-4" style="margin-top:1rem">
@@ -145,10 +167,12 @@
                         </div>
                       </div>
                     </div>
-                    <hr>
+                    <!--<hr>-->
+                  </div>
+                  <div class="row" style="background-color:#fff;">
                     <!-- Main Container Details and stuff -->
                     <div class="col-sm" style="margin-top:2rem;margin-bottom:2rem;">
-                      <div class="row" style="background-color:#fff;border-radius:8px;">
+                      <div class="row" style="background-color:#fff;">
                         <!-- empty -->
                         <div class="col-1">
                         </div>
@@ -175,17 +199,17 @@
                           <a href="#" id="mainContentInfoLink">READ MORE</a>
                           <br><br>
                           <span class="mainContentInfoHeader">ASK YOUR ASSISTANT</span>
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-sm-auto">
-                                <div class="AskYourAssistantBullets">
-                                  <img src="img/gassistant/logo-dark-16.png" alt="">
-                                  <span>How has my fitness developed over the last month?</span>
-                                </div>
+
+                          <div class="row">
+                            <div class="col-sm-auto">
+                              <div class="AskYourAssistantBullets">
+                                <img src="img/gassistant/logo-dark-16.png" alt="">
+                                <span>How has my fitness developed over the last month?</span>
                               </div>
-                              <div class="col-sm-auto"></div>
                             </div>
+                            <div class="col-sm-auto"></div>
                           </div>
+
 
                           <div class="row">
                             <div class="col-sm-auto">
@@ -220,10 +244,34 @@
                         </div>
                       </div>
                     </div>
-                    <!--<hr style="margin:3rem 0 3rem 0">-->
+                    <hr style="margin:3rem 0 3rem 0">
 
 
                   </div>
+                  <div class="row" style="background-color:#fff;border-radius:8px;">
+                    <!-- empty -->
+                    <div class="col-1">
+
+                    </div>
+                    <!-- Logo -->
+                    <div class="col-3">
+                      <img class="img img-responsive" src="img/gassistant/rating.png" alt="Rating">
+                    </div>
+                    <!-- User Rating -->
+                    <div class="col-8" style="margin-top:1rem">
+                      <span class="mainContentInfoHeader">ALL REVIEWS</span>
+                      <img class="img img-responsive" src="img/gassistant/ratingAllReviews.png" alt="All Reviews" style="max-width:100%;">
+                    </div>
+                  </div>
+                  <div class="row" style="background-color:#fff;padding:2rem 0 2rem 0;">
+                    <!-- empty -->
+                    <div class="col-1">
+
+                    </div>
+                    <!-- Privacy -->
+                    <div class="col-11">
+                      <a href="#" id="privacyLink">Privacy Policy</a>
+                    </div>
                 </div>
               </div>
             </div>

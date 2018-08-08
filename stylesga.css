@@ -11,9 +11,16 @@ body{
   color:#fff;
   height:32px;
   font-size:80%;
-  border-radius:2px;
+  border-radius:3px;
+  padding:0 2rem 0 2rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .13), 0 2px 4px -1px rgba(0, 0, 0, .2);
+}#sendToDeviceBtn:focus{
+  background-color:#3D87EC;
 }
-#sendToDeviceBtn:focus{
+}#sendToDeviceBtn:active{
+  background-color:#3D87EC;
+}
+#sendToDeviceBtn:visited{
   background-color:#618ECA;
   border:none;
 }
@@ -22,6 +29,14 @@ body{
 TYPOGRAPHY
 =============
 */
+h1{
+  font-size:24px;
+}
+h2{
+  font-size:16px;
+  font-style: normal;
+  color:#797979;
+}
 .headerText{
   margin:0 1.5rem 0 1.5rem;
   font-family: 'Open Sans', sans-serif;
@@ -68,7 +83,10 @@ TYPOGRAPHY
 #mainContentInfoLink:hover{
   color:#508AF4;
   text-decoration: none;
-
+}
+#privacyLink{
+  color:#777B7F;
+  font-size:85%;
 }
 
 /*
@@ -78,7 +96,7 @@ Google Assistant Page
 .navbar-top{
   padding-top:.9rem;
   padding-bottom:.7rem;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .04), 0 1px 10px 0 rgba(0, 0, 0, .03), 0 2px 4px -1px rgba(0, 0, 0, .1)
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .04), 0 1px 10px 0 rgba(0, 0, 0, .03), 0 2px 4px -1px rgba(0, 0, 0, .1);
 }
  #headerProfileIcon {
 	width: 32px;
@@ -138,4 +156,14 @@ Google Assistant Page
   border-radius:30px;
   color:#515557;
   font-size:85%;
+}
+.icon{
+  opacity:.5
+}
+#alertBanner{
+  position:fixed;
+  z-index:1;
+  bottom:0px;
+  margin-right:auto;
+  margin-left:auto;
 }
