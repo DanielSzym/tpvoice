@@ -245,3 +245,33 @@ DASHBOARD
 ONBOARDING
 =============
  */
+ .cards-container{
+   margin: 32px;
+   max-width: 1040px;
+   height:auto;
+   min-height:200px;
+ }
+ .s1-text-container{
+   padding:32px;
+   max-width: 650px;
+   height:auto;
+ }
+ .greeting-onboarding {
+   font-size: 32px;
+ }
+ .welcome-text{
+   font-family: Nunito Sans;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1.5;
+   font-size: 18px;
+   color: #000;
+ }
+ #btn-next-container{
+   margin-top:8rem;
+ }
+#btn-next-slide-one{
+  font-family: Nunito Sans;
+  font-size: 14px;
+  min-width:8rem;
+}
