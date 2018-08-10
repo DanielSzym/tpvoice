@@ -256,7 +256,7 @@ DASHBOARD
   float: right;
 }
 .card-service {
-  height: auto;
+  height: 280px;
 }
 .card-text {
   font-family: Nunito Sans;
@@ -277,6 +277,9 @@ DASHBOARD
 .partner-view-details {
   margin-top: 16px;
   text-align: center;
+  bottom: 16px;
+  position: absolute;
+  left: 25%;
 }
 
 /*
