@@ -142,6 +142,9 @@ p {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
 }
+.status-above {
+  color: #ea5456 !important;
+}
 
 /*
 HELPERS
