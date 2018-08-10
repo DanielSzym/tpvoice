@@ -145,6 +145,16 @@ p {
 .status-above {
   color: #ea5456 !important;
 }
+.search-text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+
+  color: #c6c6c6;
+  margin-left: 16px;
+}
 
 /*
 HELPERS
@@ -191,7 +201,6 @@ DASHBOARD
   /*box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
   z-index: 200;
   padding-top: 16px;
-  padding-bottom: 16px;
   display: inline-block;
 }
 .header-left {
@@ -211,6 +220,10 @@ DASHBOARD
 }
 .menu-img {
   float: left;
+}
+.menu-search {
+  float: left;
+  margin-left: 96px;
 }
 .menu-left {
   top: 50%;
