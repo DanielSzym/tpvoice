@@ -60,17 +60,29 @@ footer {
   background-color: rgb(200, 227, 200, 0.6);
   border-color: #c8e3c8;
 }
+.btn-darkgreen {
+  color: #fff;
+  background-color: #27ae60;
+  border-color: #27ae60;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.btn-darkgreen:hover {
+  color: #fff;
+  background-color: rgb(51, 192, 110);
+  border-color: #27ae60;
+}
 .btn-grey {
   color: #fff;
-  background-color: #C6C6C6;
-  border-color: #C6C6C6;
+  background-color: #c6c6c6;
+  border-color: #c6c6c6;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .btn-grey:hover {
   color: #fff;
   background-color: rgb(198, 198, 198, 0.6);
-  border-color: #C6C6C6;
+  border-color: #c6c6c6;
 }
 .card {
   background: #ffffff;
@@ -243,6 +255,9 @@ DASHBOARD
 .card .amount {
   float: right;
 }
+.card-service {
+  height: auto;
+}
 .card-text {
   font-family: Nunito Sans;
   font-style: normal;
@@ -252,63 +267,74 @@ DASHBOARD
 
   color: #888888;
 }
+.partner-name {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #c6c6c6;
+  text-align: center;
+}
+.partner-view-details {
+  margin-top: 16px;
+  text-align: center;
+}
 
 /*
 ONBOARDING
 =============
  */
- .cards-container{
-   margin: 32px;
-   width: 1040px;
-   height:28rem;
-   min-height:200px;
- }
- .s1-text-container{
-   padding:32px;
-   max-width: 650px;
-   height:auto;
- }
- .headerContainer{
-   margin-top: 64px;
-   margin-bottom:32px;
- }
- .greeting-onboarding {
-   font-size: 32px;
- }
- .welcome-text{
-   font-family: Nunito Sans;
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1.5;
-   font-size: 18px;
-   color: #000;
- }
- #btn-next-container{
-   margin-top:4rem;
- }
-.btn-next-slides-all{
+.cards-container {
+  margin: 32px;
+  width: 1040px;
+  height: 28rem;
+  min-height: 200px;
+}
+.s1-text-container {
+  padding: 32px;
+  max-width: 650px;
+  height: auto;
+}
+.headerContainer {
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+.greeting-onboarding {
+  font-size: 32px;
+}
+.welcome-text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 18px;
+  color: #000;
+}
+#btn-next-container {
+  margin-top: 4rem;
+}
+.btn-next-slides-all {
   font-family: Nunito Sans;
   font-size: 14px;
-  min-width:8rem;
+  min-width: 8rem;
 
-  margin-left:4rem;
-  margin-right:4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
-.subtext-onboarding{
-  margin-top:2rem;
+.subtext-onboarding {
+  margin-top: 2rem;
 }
-.s2-logo-container{
-  margin:.5rem;
+.s2-logo-container {
+  margin: 0.5rem;
   width: 14rem;
   height: 15rem;
 }
-.noneServiceText{
+.noneServiceText {
   font-family: Nunito Sans;
   text-decoration: none;
-  color:#333;
-  font-size:20px;
+  color: #333;
+  font-size: 20px;
 }
-.noneServiceText:hover{
+.noneServiceText:hover {
   text-decoration: none;
-  color:#333;
+  color: #333;
 }
