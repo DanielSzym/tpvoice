@@ -235,9 +235,17 @@ DASHBOARD
   margin-left: 96px;
 }
 .menu-left {
-  top: 50%;
+  top: 40%;
   padding-left: 8px;
   position: fixed;
+  left: 12px;
+}
+.menu-icon {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.menu-icon:hover {
+  cursor: pointer;
 }
 #notification {
   margin-left: 32px;
