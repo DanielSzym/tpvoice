@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900" rel="stylesheet">
 
-  <body class="dashboard">
+  <body class="dashboard" id="onboarding">
     <!-- HEADER & MENU -->
     <div class="container-fluid header-top">
       <div class="menu-img">
@@ -32,71 +32,87 @@
 
       <div class="d-flex justify-content-center">
         <div class="cards-container" style="background-color:#f7f8f9;">
+          <!--Progress bar-->
+          <div class="container d-flex justify-content-center" style="margin-bottom:32px;">
+            <span class="ProgressBar"><span id="PBOne">Overview</span></span>
+            <img src="img/lineHorizontal.svg">
+            <span class="ProgressBar"><span id="PBTwo">Connect a service</span></span>
+            <img src="img/lineHorizontal.svg">
+            <span class="ProgressBar"><span id="PBThree">check your data</span></span>
+            <img src="img/lineHorizontal.svg">
+            <span class="ProgressBar"><span id="PBFour">summary</span></span>
+          </div>
           <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="false">
-            <div class="carousel-inner" interval="false" style="width:auto;">
-              <!-- slide 1: welcome message-->
-              <div class="carousel-item active">
+            <div class="carousel-inner" interval="false">
 
+              <!-- slide 1 Welcome -->
+              <div class="carousel-item active carouselContainer">
+                <!-- welcome message-->
                 <div class="container">
-                  <div class="container headerContainer">
-                    <!-- Greeting with username -->
-                    <h1 class="d-flex justify-content-center greeting-onboarding">Hi John!</h1>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <div class="card s1-text-container">
-                      <span class="welcome-text">Thanks for using Livia. In this short setup you have the possibility to connect one of your currently used health services. Based on the data you’re tracking with your device we give personalized and useful insights to live a more healthy life.</span>
-                      <span class="welcome-text">Currently using none of the services? No problem, you can simply track your most important metrics manually.</span>
+                  <div class="carouselContentContainer">
+                    <div class="container headerContainer">
+                      <!-- Greeting with username -->
+                      <h1 class="d-flex justify-content-center greeting-onboarding">Hi John!</h1>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <div class="card s1-text-container">
+                        <span class="welcome-text">Thanks for using Livia. In this short setup you have the possibility to connect one of your currently used health services. Based on the data you’re tracking with your device we give personalized and useful insights to live a more healthy life.</span>
+                        <span class="welcome-text">Currently using none of the services? No problem, you can simply track your most important metrics manually.</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-center" id="btn-next-container">
+                  <div class="d-flex justify-content-center">
                     <a href="#"><button type="button" class="btn btn-red btn-next-slides-all" id="btn-next-slide-one">NEXT</button></a>
                   </div>
                 </div>
               </div>
               <!-- slide 2: Choose devices-->
-              <div class="carousel-item">
+              <!--Progress bar -->
+              <div class="carousel-item carouselContainer">
                 <!--placeholder stuff: <img class="d-block w-100" src="img/pete.png" alt="Second slide"> -->
                 <div class="container">
-                  <div class="container headerContainer">
-                    <!-- h1 and and subtext -->
-                    <div class="">
-                      <h1 class="d-flex justify-content-center greeting-onboarding">Connecting your first service!</h1>
-                      <p class="d-flex justify-content-center subtext-onboarding">Do you use any of these services?</p>
+                  <div class="carouselContentContainer">
+                    <div class="container headerContainer">
+                      <!-- h1 and and subtext -->
+                      <div class="">
+                        <h1 class="d-flex justify-content-center greeting-onboarding">Connecting your first service!</h1>
+                        <p class="d-flex justify-content-center subtext-onboarding">Do you use any of these services?</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center">
 
-                    <!-- card fitbit -->
-                    <a href="#">
-                      <div class="card s2-logo-container d-flex justify-content-center" id="serviceOne">
-                        <div class="d-flex p-2 justify-content-center">
-                          <img src="img/partner_fitbit.png" alt="fitbit Logo" class="img-responsive" style="width:10rem;height:2.5rem;">
+                      <!-- card fitbit -->
+                      <a href="#">
+                        <div class="card s2-logo-container d-flex justify-content-center" id="serviceOne">
+                          <div class="d-flex p-2 justify-content-center">
+                            <img src="img/partner_fitbit.png" alt="fitbit Logo" class="img-responsive" style="width:10rem;height:2.5rem;">
+                          </div>
                         </div>
-                      </div>
-                    </a>
+                      </a>
 
-                    <!-- card Garmin -->
-                    <a href="#">
-                      <div class="card s2-logo-container d-flex justify-content-center" id="serviceTwo">
-                        <div class="d-flex p-2 justify-content-center">
-                          <img src="img/partner_garmin.png" alt="Garmin Logo" class="img-responsive" style="width:10rem;height:2.77rem;">
+                      <!-- card Garmin -->
+                      <a href="#">
+                        <div class="card s2-logo-container d-flex justify-content-center" id="serviceTwo">
+                          <div class="d-flex p-2 justify-content-center">
+                            <img src="img/partner_garmin.png" alt="Garmin Logo" class="img-responsive" style="width:10rem;height:2.77rem;">
+                          </div>
                         </div>
-                      </div>
-                    </a>
+                      </a>
 
-                    <!-- card Polar -->
-                    <a href="#">
-                      <div class="card s2-logo-container d-flex justify-content-center" id="serviceThree">
-                        <div class="d-flex p-2 justify-content-center">
-                          <img src="img/partner_polar.png" alt="Polar Logo" class="img-responsive" style="width:10rem;height:1.76rem;">
+                      <!-- card Polar -->
+                      <a href="#">
+                        <div class="card s2-logo-container d-flex justify-content-center" id="serviceThree">
+                          <div class="d-flex p-2 justify-content-center">
+                            <img src="img/partner_polar.png" alt="Polar Logo" class="img-responsive" style="width:10rem;height:1.76rem;">
+                          </div>
                         </div>
-                      </div>
-                    </a>
-                    <a href="#" class="noneServiceText">
-                      <div class="card s2-logo-container d-flex justify-content-center" id="serviceFour">
-                          <span class="d-flex justify-content-center">None of these</span>
-                      </div>
-                    </a>
+                      </a>
+                      <a href="#" class="noneServiceText">
+                        <div class="card s2-logo-container d-flex justify-content-center" id="serviceFour">
+                            <span class="d-flex justify-content-center">None of these</span>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
@@ -105,13 +121,60 @@
                 </div>
               </div>
               <!-- slide 3: Check and verify data-->
-              <div class="carousel-item">
-                this is a placeholder lorem ipsum
-                <div class="d-flex justify-content-center">
-                  <a href="#"><button type="button" class="btn btn-green btn-next-slides-all" id="btn-prev-slide-three">BACK</button></a>
-                  <a href="#"><button type="button" class="btn btn-red btn-next-slides-all" id="btn-next-slide-three">NEXT</button></a>
+              <div class="carousel-item carouselContainer">
+                <!-- welcome message-->
+                <div class="container">
+                  <div class="carouselContentContainer">
+                    <div class="container headerContainer">
+                      <!-- Greeting with username -->
+                      <h1 class="d-flex justify-content-center greeting-onboarding">Hi John!</h1>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <div class="card s1-text-container">
+                        <span class="welcome-text">Thanks for using Livia. In this short setup you have the possibility to connect one of your currently used health services. Based on the data you’re tracking with your device we give personalized and useful insights to live a more healthy life.</span>
+                        <span class="welcome-text">Currently using none of the services? No problem, you can simply track your most important metrics manually.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a href="#"><button type="button" class="btn btn-grey btn-next-slides-all" id="btn-prev-slide-three">BACK</button></a>
+                    <a href="#"><button type="button" class="btn btn-red btn-next-slides-all" id="btn-next-slide-three">NEXT</button></a>
+                  </div>
                 </div>
               </div>
+              <!-- slide 4: Finish-->
+              <div class="carousel-item carouselContainer">
+                <!-- welcome message-->
+                <div class="container">
+                  <div class="carouselContentContainer">
+                    <div class="container headerContainer">
+                      <!-- Greeting with username -->
+                      <h1 class="d-flex justify-content-center greeting-onboarding">You’re ready to go!</h1>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <div class="cardSlideFour s1-text-container">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <img src="img/patient.svg" style="width:112px;">
+                            </div>
+                            <div class="col-sm-9">
+                              <span class="welcome-text">You’re now set to start explore your new personal health assistant. Afterwards you can simply add more and more services in your dashboard here.</span>
+                              <br><br>
+                              <span class="welcome-text">In you profile settings you  can repeat this setup process if you want to. And remember: If you have any questions, feel free to contact us. Like Livia we’re there for you. Always.</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a href="#"><button type="button" class="btn btn-grey btn-next-slides-all" id="btn-prev-slide-four">BACK</button></a>
+                    <a href="dashboard.html"><button type="button" class="btn btn-red btn-next-slides-all" id="btn-finish-slide-three">FINISH</button></a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -135,30 +198,69 @@
                function () {
                  console.log("slide next triggered from slide one");
                  $('.carousel').carousel('next');
+                 /*MANAGE PROGRESS BAR*/
+                 document.getElementById('PBOne').style['color'] = colorInactive;
+                 document.getElementById('PBOne').style['font-weight'] = fontWeightInactive;
+                 document.getElementById('PBTwo').style['color'] = colorActive;
+                 document.getElementById('PBTwo').style['font-weight'] = fontWeightActive;
+
                };
            document.getElementById('btn-next-slide-two').onclick =
                function () {
                  console.log("slide next triggered from slide two");
                  $('.carousel').carousel('next');
+                 /*MANAGE PROGRESS BAR*/
+                 document.getElementById('PBTwo').style['color'] = colorInactive;
+                 document.getElementById('PBTwo').style['font-weight'] = fontWeightInactive;
+                 document.getElementById('PBThree').style['color'] = colorActive;
+                 document.getElementById('PBThree').style['font-weight'] = fontWeightActive;
                };
            document.getElementById('btn-prev-slide-two').onclick =
                function () {
                  console.log("slide prev triggered from slide two");
                  $('.carousel').carousel('prev');
+                 /*MANAGE PROGRESS BAR*/
+                 document.getElementById('PBTwo').style['color'] = colorInactive;
+                 document.getElementById('PBTwo').style['font-weight'] = fontWeightInactive;
+                 document.getElementById('PBOne').style['color'] = colorActive;
+                 document.getElementById('PBOne').style['font-weight'] = fontWeightActive;
                };
            document.getElementById('btn-next-slide-three').onclick =
                function () {
                  console.log("slide next triggered from slide three");
                  $('.carousel').carousel('next');
+                 /*MANAGE PROGRESS BAR*/
+                 document.getElementById('PBThree').style['color'] = colorInactive;
+                 document.getElementById('PBThree').style['font-weight'] = fontWeightInactive;
+                 document.getElementById('PBFour').style['color'] = colorActive;
+                 document.getElementById('PBFour').style['font-weight'] = fontWeightActive;
                };
            document.getElementById('btn-prev-slide-three').onclick =
                function () {
                  console.log("slide prev triggered from slide three");
                  $('.carousel').carousel('prev');
+                 /*MANAGE PROGRESS BAR*/
+                 document.getElementById('PBThree').style['color'] = colorInactive;
+                 document.getElementById('PBThree').style['font-weight'] = fontWeightInactive;
+                 document.getElementById('PBTwo').style['color'] = colorActive;
+                 document.getElementById('PBTwo').style['font-weight'] = fontWeightActive;
+               };
+           document.getElementById('btn-prev-slide-four').onclick =
+               function () {
+                 console.log("slide prev triggered from slide three");
+                 $('.carousel').carousel('prev');
+                 /*MANAGE PROGRESS BAR*/
+                 document.getElementById('PBFour').style['color'] = colorInactive;
+                 document.getElementById('PBFour').style['font-weight'] = fontWeightInactive;
+                 document.getElementById('PBThree').style['color'] = colorActive;
+                 document.getElementById('PBThree').style['font-weight'] = fontWeightActive;
                };
 
 
-            // Manage selected services
+
+            /*
+            Manage selected services
+            */
             document.getElementById('serviceOne').onclick =
                  function () {
                    if (cardFour == true){}
@@ -236,9 +338,21 @@
                   console.log('cardFour now has value ' + cardFour);
               };
 
+
+
+
+
        });
        /*
-        Variables
+        Variables for Progress Bar
+       */
+       id = 1;
+       colorActive = "#000";
+       colorInactive = "#888888";
+       fontWeightActive = "bold";
+       fontWeightInactive = "normal";
+       /*
+        Variables for slide 2 cards
        */
        var cardOne, cardTwo, cardFour;
        var border = "2px solid #27AE60";
@@ -249,6 +363,8 @@
          console.log('Dokument geladen');
          cardOne = cardTwo = cardThree = cardFour = false;
          console.log('cardOne initialised with ' + cardOne);
+         document.getElementById('PBOne').style['color'] = colorActive;
+         document.getElementById('PBOne').style['font-weight'] = fontWeightActive;
        }
 
 

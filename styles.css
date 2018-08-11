@@ -324,6 +324,11 @@ DASHBOARD
 ONBOARDING
 =============
  */
+ /*deny bounce scroll effect
+#onboarding{
+  height: 100%;
+  overflow: hidden;
+}*/
 .cards-container {
   margin: 32px;
   width: 1040px;
@@ -335,8 +340,28 @@ ONBOARDING
   max-width: 650px;
   height: auto;
 }
+
+
+ .ProgressBar {
+   font-size: 10px;
+   margin-left:.5rem;
+   margin-right:.5rem;
+   text-transform: uppercase;
+   color:#888888;
+ }
+ .ProgressBarActive{
+   color: #000;
+   font-weight: bold;
+ }
+.carouselContainer{
+  /*background-color:red;*/
+  margin-bottom:.5rem;
+}
+.carouselContentContainer{
+  /*background-color:yellow;*/
+  height:368px;
+}
 .headerContainer {
-  margin-top: 64px;
   margin-bottom: 32px;
 }
 .greeting-onboarding {
@@ -350,9 +375,6 @@ ONBOARDING
   font-size: 18px;
   color: #000;
 }
-#btn-next-container {
-  margin-top: 4rem;
-}
 .btn-next-slides-all {
   font-family: Nunito Sans;
   font-size: 14px;
@@ -362,7 +384,7 @@ ONBOARDING
   margin-right: 4rem;
 }
 .subtext-onboarding {
-  margin-top: 2rem;
+  margin-top: .5rem;
 }
 .s2-logo-container {
   margin: 0.5rem;
@@ -378,4 +400,13 @@ ONBOARDING
 .noneServiceText:hover {
   text-decoration: none;
   color: #333;
+}
+.cardSlideFour {
+  background: #f7f8f9;
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border-color: white;*/
+  /*padding-left: 64px;
+  padding-right: 64px;*/
+  height: 200px;
 }
