@@ -410,3 +410,20 @@ ONBOARDING
   padding-right: 64px;*/
   height: 200px;
 }
+.labelInput{
+  color:#888;
+  text-transform: uppercase;
+  font-size:12px;
+}
+.form-control:focus {
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(234, 84, 86, 0.6);
+}
+#alertBanner{
+  position:fixed;
+  z-index:1;
+  bottom:0px;
+  margin-right:auto;
+  margin-left:auto;
+  visibility: hidden;
+}
