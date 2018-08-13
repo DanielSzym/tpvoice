@@ -251,6 +251,7 @@ DASHBOARD
   margin-left: 32px;
   padding-left: 8px;
   padding-right: 8px;
+  margin-right: 16px;
 }
 .greeting {
   font-size: 24px;
@@ -324,7 +325,7 @@ DASHBOARD
 ONBOARDING
 =============
  */
- /*deny bounce scroll effect
+/*deny bounce scroll effect
 #onboarding{
   height: 100%;
   overflow: hidden;
@@ -341,25 +342,24 @@ ONBOARDING
   height: auto;
 }
 
-
- .ProgressBar {
-   font-size: 10px;
-   margin-left:.5rem;
-   margin-right:.5rem;
-   text-transform: uppercase;
-   color:#888888;
- }
- .ProgressBarActive{
-   color: #000;
-   font-weight: bold;
- }
-.carouselContainer{
-  /*background-color:red;*/
-  margin-bottom:.5rem;
+.ProgressBar {
+  font-size: 10px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  color: #888888;
 }
-.carouselContentContainer{
+.ProgressBarActive {
+  color: #000;
+  font-weight: bold;
+}
+.carouselContainer {
+  /*background-color:red;*/
+  margin-bottom: 0.5rem;
+}
+.carouselContentContainer {
   /*background-color:yellow;*/
-  height:368px;
+  height: 368px;
 }
 .headerContainer {
   margin-bottom: 32px;
@@ -384,7 +384,7 @@ ONBOARDING
   margin-right: 4rem;
 }
 .subtext-onboarding {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 .s2-logo-container {
   margin: 0.5rem;
@@ -410,20 +410,21 @@ ONBOARDING
   padding-right: 64px;*/
   height: 200px;
 }
-.labelInput{
-  color:#888;
+.labelInput {
+  color: #888;
   text-transform: uppercase;
-  font-size:12px;
+  font-size: 12px;
 }
 .form-control:focus {
-  border-color: #FF0000;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(234, 84, 86, 0.6);
+  border-color: #ff0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(234, 84, 86, 0.6);
 }
-#alertBanner{
-  position:fixed;
-  z-index:1;
-  bottom:0px;
-  margin-right:auto;
-  margin-left:auto;
+#alertBanner {
+  position: fixed;
+  z-index: 1;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
   visibility: hidden;
 }
