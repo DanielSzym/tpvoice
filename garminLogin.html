@@ -14,8 +14,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
   <body class="dashboard" id="onboarding">
-    <!-- HEADER & MENU -->
-    <div class="container" id="loginContainer">
+    <!-- Login Element -->
+    <!--<div class="container" id="loginContainer">
       <h1>Anmeldung beim <br> Garmin-Konto</h1>
       <form>
         <div class="form-group">
@@ -41,7 +41,7 @@
       <div id="registrierenText">
         Sie haben kein Konto? <a href="#">Konto erstellen</a>
       </div>
-     </div>
+     </div>-->
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -64,8 +64,80 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
 
 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo</p>
 
+
+
     <div>
-    <button type="submit" class="btn btn-primary selector">click</button>
+
+
+
+      <h2>Popup Example</h2>
+
+  <!-- Trigger/Open The Popup -->
+  <button id="btn-next-slide-two">Open Popup</button>
+
+  <!-- The popup -->
+  <div id="LoginPopup" class="loginPopup">
+    <!-- Popup content -->
+    <div class="container" id="loginContainer">
+      <span class="close">&times;</span>
+      <h1>Anmeldung beim <br> Garmin-Konto</h1>
+      <form>
+        <div class="form-group">
+          <label for="formGroupEmail">Email</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="formGroupKennwort">Kennwort <a href="#">(Vergessen?)</a></label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="">
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary" id="garminLogin">Anmelden</button>
+          </div>
+          <div class="form-check mb-6" id="rememberRadioBtn">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Daten speichern
+            </label>
+          </div>
+        </div>
+      </form>
+      <div id="registrierenText">
+        Sie haben kein Konto? <a href="#">Konto erstellen</a>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <script>
+    // Get the popup
+    var popup = document.getElementById('LoginPopup');
+
+    // Get the button that opens the popup
+    var btn = document.getElementById("btn-next-slide-two");
+
+    // Get the <span> element that closes the popup
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the popup
+    btn.onclick = function() {
+        popup.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the popup
+    span.onclick = function() {
+        popup.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the popup, close it
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+  </script>
 
     <!-- 1 is jQuery , 2 is Popper.js,  is Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

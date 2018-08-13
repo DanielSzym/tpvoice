@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
   <body class="dashboard" id="onboarding">
     <!-- HEADER & MENU -->
@@ -123,7 +124,6 @@
                     <button type="button" class="btn btn-grey btn-next-slides-all" id="btn-prev-slide-two">BACK</button>
                   </div>
                   <button disabled type="button" class="btn btn-red btn-next-slides-all" id="btn-next-slide-two">NEXT</button>
-
                 </div>
               </div>
               <!-- slide 3: Check and verify data-->
@@ -226,6 +226,45 @@
           </button>-->
       </div>
 
+      <!-- Lets get the Garmin-login Popup for slide two -->
+      <!-- The popup -->
+      <div id="LoginPopup" class="loginPopup">
+        <!-- Popup content -->
+        <div class="container" id="loginContainer">
+          <span class="close">&times;</span>
+          <h1>Anmeldung beim <br> Garmin-Konto</h1>
+          <form>
+            <div class="form-group">
+              <label for="formGroupEmail">Email</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="formGroupKennwort">Kennwort <a href="#">(Vergessen?)</a></label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="">
+            </div>
+            <div class="row">
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary" id="garminLogin">Anmelden</button>
+              </div>
+              <div class="form-check mb-6" id="rememberRadioBtn">
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                <label class="form-check-label" for="autoSizingCheck">
+                  Daten speichern
+                </label>
+              </div>
+            </div>
+          </form>
+          <!--<div class="loader" id="loading"></div>-->
+          <div id="registrierenText">
+            Sie haben kein Konto? <a href="#">Konto erstellen</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
 
     <!-- 1 is jQuery , 2 is Popper.js,  is Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -238,39 +277,42 @@
 
     <!-- JavaScript here -->
     <script type="text/javascript">
-       $(function(){
-           // Managing slide changes
-           document.getElementById('btn-next-slide-one').onclick =
-               function () {
-                 console.log("slide next triggered from slide one");
-                 $('.carousel').carousel('next');
-                 /*MANAGE PROGRESS BAR*/
-                 document.getElementById('PBOne').style['color'] = colorInactive;
-                 document.getElementById('PBOne').style['font-weight'] = fontWeightInactive;
-                 document.getElementById('PBTwo').style['color'] = colorActive;
-                 document.getElementById('PBTwo').style['font-weight'] = fontWeightActive;
-
-               };
-           document.getElementById('btn-next-slide-two').onclick =
-               function () {
-                 console.log("slide next triggered from slide two");
-                 if (cardOne == false && cardTwo == false && cardThree == false && cardFour == false){
-                   //show alert and close after 4 seconds
-                   document.getElementById('alertBanner').style['visibility'] = "visible";
-                   var $alert = $('.alert').alert()
-                    setTimeout(function () {
-                      $alert.alert('close')
-                    }, 4000)
-                 }
-                 else{
-                   $('.carousel').carousel('next');
-                   /*MANAGE PROGRESS BAR*/
-                   document.getElementById('PBTwo').style['color'] = colorInactive;
-                   document.getElementById('PBTwo').style['font-weight'] = fontWeightInactive;
-                   document.getElementById('PBThree').style['color'] = colorActive;
-                   document.getElementById('PBThree').style['font-weight'] = fontWeightActive;
-                 }
-               };
+      setTimeout(function() {
+        $('#loading').addClass('hidden');
+      }, 1000);
+      $(function(){
+        // Managing slide changes
+        document.getElementById('btn-next-slide-one').onclick =
+          function () {
+            console.log("slide next triggered from slide one");
+            $('.carousel').carousel('next');
+             /*MANAGE PROGRESS BAR*/
+             document.getElementById('PBOne').style['color'] = colorInactive;
+             document.getElementById('PBOne').style['font-weight'] = fontWeightInactive;
+             document.getElementById('PBTwo').style['color'] = colorActive;
+             document.getElementById('PBTwo').style['font-weight'] = fontWeightActive;
+           };
+       document.getElementById('btn-next-slide-two').onclick =
+        function () {
+          console.log("slide next triggered from slide two");
+          if (cardOne == false && cardTwo == false && cardThree == false && cardFour == false){
+            //show alert and close after 4 seconds
+            document.getElementById('alertBanner').style['visibility'] = "visible";
+            var $alert = $('.alert').alert()
+              setTimeout(function () {
+                $alert.alert('close')
+              }, 4000)
+            }
+            else{
+              //$('.carousel').carousel('next');
+              popup.style.display = "block";
+              /*MANAGE PROGRESS BAR*/
+              document.getElementById('PBTwo').style['color'] = colorInactive;
+              document.getElementById('PBTwo').style['font-weight'] = fontWeightInactive;
+              document.getElementById('PBThree').style['color'] = colorActive;
+              document.getElementById('PBThree').style['font-weight'] = fontWeightActive;
+            }
+        };
            document.getElementById('btn-prev-slide-two').onclick =
                function () {
                  console.log("slide prev triggered from slide two");
@@ -311,8 +353,21 @@
                  document.getElementById('PBThree').style['color'] = colorActive;
                  document.getElementById('PBThree').style['font-weight'] = fontWeightActive;
                };
+           document.getElementById('garminLogin').onclick =
+            function () {
 
+              document.getElementById('garminLogin').style['background-color'] = '#1ac2ff';
+              document.getElementById('formGroupExampleInput').disabled = 'true';
+              document.getElementById('inputPassword4').disabled = 'true';
+              document.getElementById('garminLogin').disabled = 'true';
+              document.getElementById('autoSizingCheck').disabled = 'true';
+              setTimeout(function(){
+                //some fake loading time for the feeling
+                popup.style.display = "none";
+                $('.carousel').carousel('next');
 
+              }, 700);
+            };
 
             /*
             Manage selected services
@@ -436,6 +491,27 @@
          console.log('cardOne initialised with ' + cardOne);
          document.getElementById('PBOne').style['color'] = colorActive;
          document.getElementById('PBOne').style['font-weight'] = fontWeightActive;
+       }
+
+       // Get the GarminLogin popup
+       var popup = document.getElementById('LoginPopup');
+       // Get the button that opens the popup
+       var btn = document.getElementById("btn-next-slide-two");
+       // Get the <span> element that closes the popup
+       var span = document.getElementsByClassName("close")[0];
+       // When the user clicks the button, open the popup
+       btn.onclick = function() {
+           popup.style.display = "block";
+       }
+       // When the user clicks on <span> (x), close the popup
+       span.onclick = function() {
+           popup.style.display = "none";
+       }
+       // When the user clicks anywhere outside of the popup, close it
+       window.onclick = function(event) {
+           if (event.target == popup) {
+               popup.style.display = "none";
+           }
        }
     </script>
   </body>
