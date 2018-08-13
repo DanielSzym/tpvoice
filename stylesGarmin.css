@@ -1,0 +1,56 @@
+/*
+GENERAL STYLES
+=============
+ */
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+}
+a{
+  color:#0177CD;
+  text-decoration:underline;
+}
+a:hover{
+  color:#0177CD;
+  text-decoration:none;
+}
+#loginContainer{
+  max-width:370px;
+  background-color:#FAFAFA;
+  border: 1px solid #CCCCCC;
+
+
+    position: fixed/*absolute*/;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+}
+
+
+#garminLogin{
+  font-size:14px;
+  font-style: bold;
+  background-color: #00ABE7;
+  border-radius: 10px;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+#rememberRadioBtn{
+  padding-top:.4rem;
+}
+#registrierenText{
+  margin-top:1rem;
+  margin-bottom:2rem;
+}
+/*
+TYPOGRAPHY
+=============
+*/
+h1{
+  font-size:28px;
+}
