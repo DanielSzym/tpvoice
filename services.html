@@ -17,7 +17,9 @@
         <!-- HEADER & MENU -->
         <div class="container-fluid header-top">
             <div class="menu-img">
-                <img src="img/logo-dark.png" alt="Livia Health Logo" style="width:auto; height:40px;">
+                <a href="./dashboard.html">
+                    <img src="img/logo-dark.png" alt="Livia Health Logo" style="width:auto; height:40px;">
+                </a>
             </div>
             <div class="menu-search">
                 <img src="img/icon-search.png" alt="icon search" style="width:24px; height: 24px;">
@@ -36,10 +38,10 @@
         <div class="header-left">
             <div class="menu-left">
                 <div>
-                    <img class="menu-icon" src="img/icon-dashboard-active.png" style="width: 24px; height: auto">
+                    <img class="menu-icon" src="img/icon-dashboard.png" style="width: 24px; height: auto">
                 </div>
                 <div>
-                    <img class="menu-icon" src="img/icon-services.png" style="width: 24px; height: auto">
+                    <img class="menu-icon" src="img/icon-services-active.png" style="width: 24px; height: auto">
                 </div>
                 <div>
                     <img class="menu-icon" src="img/icon-graphs.png" style="width: 24px; height: auto">
@@ -54,7 +56,114 @@
         </div>
 
         <!-- CONTENT -->
-
+        <div class="container" style="margin-top: 64px;">
+            <!-- Greeting with username -->
+            <h1 class="greeting">Service Connections</h1>
+        </div>
+        <!-- General Health-->
+        <div class="container" style="margin-top: 32px;">
+            <h4>General Health</h4>
+            <!-- Garmin (connected)-->
+            <div class="container row align-items-center justify-content-center" style="margin-top: 32px;">
+                <div class="col-8 connection-card-service">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img class="menu-icon" src="img/partner-garmin-logo.png" style="width: 124px; height: auto">
+                        </div>
+                        <div class="col">
+                            <div class="card-title">Garmin Connect</div>
+                            <p>
+                                Track general health information from your Garmin devices. E.g weight, steps, workouts etc. This is the base for all your
+                                insights
+                            </p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <button type="button" class="btn btn-white">Connected</button>
+                    </a>
+                </div>
+            </div>
+            <!-- Fitbit (not connected) -->
+            <div class="container row align-items-center justify-content-center" style="margin-top: 32px;">
+                <div class="col-8 connection-card-service">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img class="menu-icon" src="img/partner-fitbit-logo.png" style="width: 124px; height: auto">
+                        </div>
+                        <div class="col">
+                            <div class="card-title">Fitbit</div>
+                            <p>
+                                As one of the largest provider of fitness and health trackers the fitbit service gives you the ability to bring all of your
+                                general health information into Livia
+                            </p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <button type="button" class="btn btn-darkgreen">Connect</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Food Management-->
+        <div class="container" style="margin-top: 32px;">
+            <h4>Food Management</h4>
+            <!-- Lifesum (connected) -->
+            <div class="container row align-items-center justify-content-center" style="margin-top: 32px;">
+                <div class="col-8 connection-card-service">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img class="menu-icon" src="img/partner_lifesum.png" style="width: 124px; height: auto">
+                        </div>
+                        <div class="col">
+                            <div class="card-title">Lifesum</div>
+                            <p>
+                                Food management made easy. With lifesum you can easily track all you meals per day and plan them. Livia supports you and
+                                provides you with useful information all about food
+                            </p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <button type="button" class="btn btn-white">Connected</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Diabetes-->
+        <div class="container" style="margin-top: 32px; margin-bottom: 64px;">
+            <h4>Diabetes</h4>
+            <!-- Dexcom (connected) -->
+            <div class="container row align-items-center justify-content-center" style="margin-top: 32px;">
+                <div class="col-8 connection-card-service">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img class="menu-icon" src="img/partner_clarity.png" style="width: 124px; height: auto">
+                        </div>
+                        <div class="col">
+                            <div class="card-title">Dexcom Clarity</div>
+                            <p>
+                                Simple and intuitive way to measure all your blood sugar and insuline data? Dexcom provides you with easy to use devices.
+                                With a connection to Livia you got all those features everywhere and personalized for you
+                            </p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <button type="button" class="btn btn-white">Connected</button>
+                    </a>
+                </div>
+            </div>
+        </div>
 
 
         <!-- JavaScript here -->

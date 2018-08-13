@@ -29,60 +29,60 @@ footer {
 .btn-red {
   color: #fff;
   background-color: #ea5456;
-  border-color: #ea5456;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .btn-red:active:focus {
   color: #fff;
   background-color: #ea5456;
-  border-color: #ea5456;
 }
 .btn-red:active:focus {
   color: #fff;
   background-color: #ea5456;
-  border-color: #ea5456;
 }
 .btn-red:hover {
   color: #fff;
   background-color: rgb(234, 84, 86, 0.8);
-  border-color: #ea5456;
 }
 .btn-green {
   color: #fff;
   background-color: #c8e3c8;
-  border-color: #c8e3c8;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .btn-green:hover {
   color: #fff;
   background-color: rgb(200, 227, 200, 0.6);
-  border-color: #c8e3c8;
 }
 .btn-darkgreen {
   color: #fff;
   background-color: #27ae60;
-  border-color: #27ae60;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .btn-darkgreen:hover {
   color: #fff;
   background-color: rgb(51, 192, 110);
-  border-color: #27ae60;
+}
+.btn-white {
+  color: #27ae60;
+  background-color: white;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.btn-white:hover {
+  color: #27ae60;
+  background-color: rgb(236, 236, 236);
 }
 .btn-grey {
   color: #fff;
   background-color: #c6c6c6;
-  border-color: #c6c6c6;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .btn-grey:hover {
   color: #fff;
   background-color: rgb(198, 198, 198, 0.6);
-  border-color: #c6c6c6;
 }
 .card {
   background: #ffffff;
@@ -126,6 +126,14 @@ h4 {
 p {
   color: #333;
   font-family: "Nunito Sans", sans-serif;
+}
+a {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+
+  color: #ff5364;
 }
 
 .detail-text {
@@ -294,7 +302,7 @@ DASHBOARD
 .card .amount {
   float: right;
 }
-.card-service {
+.dashboard-card-service {
   height: 280px;
 }
 .card-text {
@@ -319,6 +327,18 @@ DASHBOARD
   bottom: 16px;
   position: absolute;
   left: 25%;
+}
+
+/*
+CONNECTED SERVICES
+=============
+ */
+.connection-card-service {
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  vertical-align: center;
 }
 
 /*
