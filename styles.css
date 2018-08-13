@@ -29,60 +29,60 @@ footer {
 .btn-red {
   color: #fff;
   background-color: #ea5456;
-  border-color: #ea5456;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .btn-red:active:focus {
   color: #fff;
   background-color: #ea5456;
-  border-color: #ea5456;
 }
 .btn-red:active:focus {
   color: #fff;
   background-color: #ea5456;
-  border-color: #ea5456;
 }
 .btn-red:hover {
   color: #fff;
   background-color: rgb(234, 84, 86, 0.8);
-  border-color: #ea5456;
 }
 .btn-green {
   color: #fff;
   background-color: #c8e3c8;
-  border-color: #c8e3c8;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .btn-green:hover {
   color: #fff;
   background-color: rgb(200, 227, 200, 0.6);
-  border-color: #c8e3c8;
 }
 .btn-darkgreen {
   color: #fff;
   background-color: #27ae60;
-  border-color: #27ae60;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .btn-darkgreen:hover {
   color: #fff;
   background-color: rgb(51, 192, 110);
-  border-color: #27ae60;
+}
+.btn-white {
+  color: #27ae60;
+  background-color: white;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.btn-white:hover {
+  color: #27ae60;
+  background-color: rgb(236, 236, 236);
 }
 .btn-grey {
   color: #fff;
   background-color: #c6c6c6;
-  border-color: #c6c6c6;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .btn-grey:hover {
   color: #fff;
   background-color: rgb(198, 198, 198, 0.6);
-  border-color: #c6c6c6;
 }
 .card {
   background: #ffffff;
@@ -126,6 +126,14 @@ h4 {
 p {
   color: #333;
   font-family: "Nunito Sans", sans-serif;
+}
+a {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+
+  color: #ff5364;
 }
 
 .detail-text {
@@ -251,6 +259,7 @@ DASHBOARD
   margin-left: 32px;
   padding-left: 8px;
   padding-right: 8px;
+  margin-right: 16px;
 }
 .greeting {
   font-size: 24px;
@@ -293,7 +302,7 @@ DASHBOARD
 .card .amount {
   float: right;
 }
-.card-service {
+.dashboard-card-service {
   height: 280px;
 }
 .card-text {
@@ -321,10 +330,22 @@ DASHBOARD
 }
 
 /*
+CONNECTED SERVICES
+=============
+ */
+.connection-card-service {
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  vertical-align: center;
+}
+
+/*
 ONBOARDING
 =============
  */
- /*deny bounce scroll effect
+/*deny bounce scroll effect
 #onboarding{
   height: 100%;
   overflow: hidden;
@@ -341,25 +362,24 @@ ONBOARDING
   height: auto;
 }
 
-
- .ProgressBar {
-   font-size: 10px;
-   margin-left:.5rem;
-   margin-right:.5rem;
-   text-transform: uppercase;
-   color:#888888;
- }
- .ProgressBarActive{
-   color: #000;
-   font-weight: bold;
- }
-.carouselContainer{
-  /*background-color:red;*/
-  margin-bottom:.5rem;
+.ProgressBar {
+  font-size: 10px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  color: #888888;
 }
-.carouselContentContainer{
+.ProgressBarActive {
+  color: #000;
+  font-weight: bold;
+}
+.carouselContainer {
+  /*background-color:red;*/
+  margin-bottom: 0.5rem;
+}
+.carouselContentContainer {
   /*background-color:yellow;*/
-  height:368px;
+  height: 368px;
 }
 .headerContainer {
   margin-bottom: 32px;
@@ -384,7 +404,7 @@ ONBOARDING
   margin-right: 4rem;
 }
 .subtext-onboarding {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 .s2-logo-container {
   margin: 0.5rem;
@@ -410,20 +430,21 @@ ONBOARDING
   padding-right: 64px;*/
   height: 200px;
 }
-.labelInput{
-  color:#888;
+.labelInput {
+  color: #888;
   text-transform: uppercase;
-  font-size:12px;
+  font-size: 12px;
 }
 .form-control:focus {
-  border-color: #FF0000;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(234, 84, 86, 0.6);
+  border-color: #ff0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(234, 84, 86, 0.6);
 }
-#alertBanner{
-  position:fixed;
-  z-index:1;
-  bottom:0px;
-  margin-right:auto;
-  margin-left:auto;
+#alertBanner {
+  position: fixed;
+  z-index: 1;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
   visibility: hidden;
 }

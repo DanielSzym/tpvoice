@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900" rel="stylesheet">
+
+    <body class="dashboard">
+        <!-- HEADER & MENU -->
+        <div class="container-fluid header-top">
+            <div class="menu-img">
+                <a href="./dashboard.html">
+                    <img src="img/logo-dark.png" alt="Livia Health Logo" style="width:auto; height:40px;">
+                </a>
+            </div>
+            <div class="menu-search">
+                <img src="img/icon-search.png" alt="icon search" style="width:24px; height: 24px;">
+                <span class="search-text">Search here...</span>
+            </div>
+            <div class="menu-top">
+                <img src="img/pete.png" alt="user image" style="width: 32px; height: 32px">
+                <span class="user-name">John Doe</span>
+                <img src="img/icon-arrow-bottom.png" style="width: 24px; height: 24px">
+                <span id="notification">
+                    <img src="img/icon-notification.png" style="width: 34px; height: 34px">
+                </span>
+                <img id="help" src="img/icon-help.png" style="width: 24px; height: 24px">
+            </div>
+        </div>
+        <div class="header-left">
+            <div class="menu-left">
+                <div>
+                    <img class="menu-icon" src="img/icon-dashboard.png" style="width: 24px; height: auto">
+                </div>
+                <div>
+                    <img class="menu-icon" src="img/icon-services-active.png" style="width: 24px; height: auto">
+                </div>
+                <div>
+                    <img class="menu-icon" src="img/icon-graphs.png" style="width: 24px; height: auto">
+                </div>
+                <div>
+                    <img class="menu-icon" src="img/icon-user.png" style="width: 24px; height: auto">
+                </div>
+                <div>
+                    <img class="menu-icon" src="img/icon-settings.png" style="width: 24px; height: auto">
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="container" style="margin-top: 64px;">
+            <!-- Greeting with username -->
+            <h1 class="greeting">Service Connections</h1>
+        </div>
+        <!-- General Health-->
+        <div class="container" style="margin-top: 32px;">
+            <h4>General Health</h4>
+            <!-- Garmin (connected)-->
+            <div class="container row align-items-center justify-content-center" style="margin-top: 32px;">
+                <div class="col-8 connection-card-service">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img class="menu-icon" src="img/partner-garmin-logo.png" style="width: 124px; height: auto">
+                        </div>
+                        <div class="col">
+                            <div class="card-title">Garmin Connect</div>
+                            <p>
+                                Track general health information from your Garmin devices. E.g weight, steps, workouts etc. This is the base for all your
+                                insights
+                            </p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <button type="button" class="btn btn-white">Connected</button>
+                    </a>
+                </div>
+            </div>
+            <!-- Fitbit (not connected) -->
+            <div class="container row align-items-center justify-content-center" style="margin-top: 32px;">
+                <div class="col-8 connection-card-service">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img class="menu-icon" src="img/partner-fitbit-logo.png" style="width: 124px; height: auto">
+                        </div>
+                        <div class="col">
+                            <div class="card-title">Fitbit</div>
+                            <p>
+                                As one of the largest provider of fitness and health trackers the fitbit service gives you the ability to bring all of your
+                                general health information into Livia
+                            </p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <button type="button" class="btn btn-darkgreen">Connect</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Food Management-->
+        <div class="container" style="margin-top: 32px;">
+            <h4>Food Management</h4>
+            <!-- Lifesum (connected) -->
+            <div class="container row align-items-center justify-content-center" style="margin-top: 32px;">
+                <div class="col-8 connection-card-service">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img class="menu-icon" src="img/partner_lifesum.png" style="width: 124px; height: auto">
+                        </div>
+                        <div class="col">
+                            <div class="card-title">Lifesum</div>
+                            <p>
+                                Food management made easy. With lifesum you can easily track all you meals per day and plan them. Livia supports you and
+                                provides you with useful information all about food
+                            </p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <button type="button" class="btn btn-white">Connected</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Diabetes-->
+        <div class="container" style="margin-top: 32px; margin-bottom: 64px;">
+            <h4>Diabetes</h4>
+            <!-- Dexcom (connected) -->
+            <div class="container row align-items-center justify-content-center" style="margin-top: 32px;">
+                <div class="col-8 connection-card-service">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <img class="menu-icon" src="img/partner_clarity.png" style="width: 124px; height: auto">
+                        </div>
+                        <div class="col">
+                            <div class="card-title">Dexcom Clarity</div>
+                            <p>
+                                Simple and intuitive way to measure all your blood sugar and insuline data? Dexcom provides you with easy to use devices.
+                                With a connection to Livia you got all those features everywhere and personalized for you
+                            </p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <button type="button" class="btn btn-white">Connected</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JavaScript here -->
+
+        <!-- 1 is jQuery , 2 is Popper.js,  is Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
