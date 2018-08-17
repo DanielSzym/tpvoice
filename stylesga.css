@@ -3,7 +3,10 @@ GENERAL STYLES
 =============
  */
 body{
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  font-style:normal;
+  word-spacing: 1px;
   background-color:#F1F3F4;
 }
 #sendToDeviceBtn{
